@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Регистрация — NEONCORE</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="glow"></div>
+<div class="site">
+
+  <header class="hud">
+    <div class="container hud-inner">
+      <a class="logo glitch" data-text="NEONCORE" href="index.html">NEON<b>CORE</b><small>DIGITAL PLATFORM v2.7</small></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Главная</a>
+        <a href="index.html#about">О платформе</a>
+        <a href="index.html#news">Новости</a>
+        <a href="login.html">Вход</a>
+      </nav>
+      <div class="hud-right">
+        <span class="sys-clock" id="clock">--:--:--</span>
+        <a class="btn btn-primary btn-sm" href="register.html">Регистрация</a>
+        <button class="burger" id="burger" aria-label="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth">
+    <!-- арт-панель -->
+    <div class="auth-art">
+      <img src="https://picsum.photos/seed/neon-city-signup/900/1100" alt="">
+      <div class="radar" aria-hidden="true"></div>
+      <div class="auth-art-content">
+        <p class="auth-quote">«Каждый большой продукт начинался с одного — <em>первого шага</em>. Сделайте его прямо сейчас»</p>
+        <p class="auth-sub">// ДОСТУП К ПЛАТФОРМЕ ПОСЛЕ ПОДТВЕРЖДЕНИЯ</p>
+      </div>
+    </div>
+
+    <!-- форма -->
+    <div class="auth-panel">
+      <form class="auth-box" id="auth-form" data-mode="register" novalidate>
+        <div class="sec-label">// НОВЫЙ ПОЛЬЗОВАТЕЛЬ // РЕГИСТРАЦИЯ</div>
+        <h1 data-scramble data-text="СОЗДАНИЕ АККАУНТА">СОЗДАНИЕ АККАУНТА</h1>
+        <p class="auth-note">Заполните форму и получите доступ к проектам, сообществу и инструментам платформы.</p>
+
+        <div class="field">
+          <label for="reg-nick">Имя или псевдоним</label>
+          <div class="input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+            <input type="text" id="reg-nick" placeholder="Например: ANNA_V" required maxlength="20">
+          </div>
+          <div class="err-msg">&gt; введите имя</div>
+          <div class="hint" id="nick-hint"></div>
+        </div>
+
+        <div class="field">
+          <label for="reg-email">E-mail</label>
+          <div class="input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg>
+            <input type="email" id="reg-email" placeholder="you@company.io" required>
+          </div>
+          <div class="err-msg">&gt; введите корректный e-mail</div>
+        </div>
+
+        <div class="field">
+          <label for="reg-pass">Пароль</label>
+          <div class="pw-wrap input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
+            <input type="password" id="reg-pass" placeholder="Минимум 8 символов" required minlength="8">
+            <button type="button" class="pw-toggle" aria-label="Показать пароль">SHOW</button>
+          </div>
+          <div class="strength" id="strength"><i></i><i></i><i></i><i></i></div>
+          <div class="err-msg">&gt; минимум 8 символов</div>
+        </div>
+
+        <div class="field">
+          <label for="reg-pass2">Повторите пароль</label>
+          <div class="pw-wrap input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M8 10V7a4 4 0 018 0v3"/><path d="M12 14v3"/></svg>
+            <input type="password" id="reg-pass2" placeholder="Ещё раз" required>
+            <button type="button" class="pw-toggle" aria-label="Показать пароль">SHOW</button>
+          </div>
+          <div class="err-msg">&gt; пароли не совпадают</div>
+        </div>
+
+        <div class="field">
+          <label>Выберите аватар</label>
+          <div class="avatar-pick">
+            <label class="avatar-opt"><input type="radio" name="avatar" checked><img src="https://picsum.photos/seed/avatar-neon-1/120/120" alt="Аватар 1"></label>
+            <label class="avatar-opt"><input type="radio" name="avatar"><img src="https://picsum.photos/seed/avatar-neon-2/120/120" alt="Аватар 2"></label>
+            <label class="avatar-opt"><input type="radio" name="avatar"><img src="https://picsum.photos/seed/avatar-neon-3/120/120" alt="Аватар 3"></label>
+            <label class="avatar-opt"><input type="radio" name="avatar"><img src="https://picsum.photos/seed/avatar-neon-4/120/120" alt="Аватар 4"></label>
+            <label class="avatar-opt"><input type="radio" name="avatar"><img src="https://picsum.photos/seed/avatar-neon-5/120/120" alt="Аватар 5"></label>
+            <label class="avatar-opt"><input type="radio" name="avatar"><img src="https://picsum.photos/seed/avatar-neon-6/120/120" alt="Аватар 6"></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="reg-genre">Направление</label>
+          <select id="reg-genre">
+            <option>Разработка</option>
+            <option>Дизайн</option>
+            <option>Аналитика данных</option>
+            <option>Продакт-менеджмент</option>
+            <option>Маркетинг</option>
+          </select>
+        </div>
+
+        <label class="check-row">
+          <input type="checkbox" id="terms" required>
+          <span>Принимаю <a href="#">условия использования</a> и политику конфиденциальности платформы.</span>
+        </label>
+
+        <button type="submit" class="btn btn-magenta btn-block">Создать аккаунт</button>
+        <p class="auth-switch">Уже зарегистрированы? <a href="login.html">&gt; войти_</a></p>
+      </form>
+    </div>
+  </main>
+</div>
+
+<!-- boot-оверлей -->
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-lines"></div>
+    <div class="boot-final"></div>
+    <div class="boot-name"></div>
+    <div class="boot-bar"><i></i></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вход — NEONCORE</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="glow"></div>
+<div class="site">
+
+  <header class="hud">
+    <div class="container hud-inner">
+      <a class="logo glitch" data-text="NEONCORE" href="index.html">NEON<b>CORE</b><small>DIGITAL PLATFORM v2.7</small></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Главная</a>
+        <a href="index.html#about">О платформе</a>
+        <a href="index.html#news">Новости</a>
+        <a href="register.html">Регистрация</a>
+      </nav>
+      <div class="hud-right">
+        <span class="sys-clock" id="clock">--:--:--</span>
+        <a class="btn btn-ghost btn-sm" href="login.html">Вход</a>
+        <button class="burger" id="burger" aria-label="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth">
+    <!-- арт-панель -->
+    <div class="auth-art">
+      <img src="https://picsum.photos/seed/neon-login-gate/900/1100" alt="">
+      <div class="radar" aria-hidden="true"></div>
+      <div class="auth-art-content">
+        <p class="auth-quote">«Система открывается тем, у кого есть ключ. Введите свой — <em>и неон сделает остальное</em>»</p>
+        <p class="auth-sub">// РЕЛИЗ ДНЯ: ВЕРСИЯ 2.7.1 — АНАЛИТИКА В РЕАЛЬНОМ ВРЕМЕНИ</p>
+      </div>
+    </div>
+
+    <!-- форма -->
+    <div class="auth-panel">
+      <form class="auth-box" id="auth-form" data-mode="login" novalidate>
+        <div class="sec-label">// АВТОРИЗАЦИЯ // ДОСТУП К ПЛАТФОРМЕ</div>
+        <h1 data-scramble data-text="ВХОД В СИСТЕМУ">ВХОД В СИСТЕМУ</h1>
+        <p class="auth-note">С возвращением! Подтвердите доступ, чтобы продолжить работу над проектами.</p>
+
+        <div class="field">
+          <label for="login-id">Логин или e-mail</label>
+          <div class="input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+            <input type="text" id="login-id" placeholder="ANNA_V или you@company.io" required>
+          </div>
+          <div class="err-msg">&gt; введите логин или e-mail</div>
+        </div>
+
+        <div class="field">
+          <label for="login-pass">Пароль</label>
+          <div class="pw-wrap input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
+            <input type="password" id="login-pass" placeholder="••••••••" required>
+            <button type="button" class="pw-toggle" aria-label="Показать пароль">SHOW</button>
+          </div>
+          <div class="err-msg">&gt; введите пароль</div>
+        </div>
+
+        <label class="check-row">
+          <input type="checkbox" checked>
+          <span>Запомнить меня на этом устройстве</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block">Войти на платформу</button>
+        <p class="auth-switch"><a href="#">&gt; забыли пароль?</a> &nbsp;·&nbsp; нет аккаунта? <a href="register.html">регистрация_</a></p>
+
+        <div class="divider">ИЛИ ЧЕРЕЗ</div>
+        <div class="socials">
+          <a href="#" class="social-btn" aria-label="Войти через GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11 11 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            GITHUB
+          </a>
+          <a href="#" class="social-btn" aria-label="Войти через Telegram">
+            <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+            TELEGRAM
+          </a>
+          <a href="#" class="social-btn" aria-label="Войти через Google">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20c5.2 0 9-3.7 9-9h-9v3h5.6A6.5 6.5 0 1112 5.5c1.6 0 3.1.6 4.2 1.6l2.2-2.2A9.9 9.9 0 0012 2z"/></svg>
+            GOOGLE
+          </a>
+        </div>
+      </form>
+    </div>
+  </main>
+</div>
+
+<!-- boot-оверлей -->
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-lines"></div>
+    <div class="boot-final"></div>
+    <div class="boot-name"></div>
+    <div class="boot-bar"><i></i></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

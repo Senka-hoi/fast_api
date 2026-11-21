@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEONCORE — цифровая платформа</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="glow"></div>
+<div class="site">
+
+  <!-- HUD -->
+  <header class="hud">
+    <div class="container hud-inner">
+      <a class="logo glitch" data-text="NEONCORE" href="index.html">NEON<b>CORE</b><small>DIGITAL PLATFORM v2.7</small></a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">Главная</a>
+        <a href="#about">О платформе</a>
+        <a href="#news">Новости</a>
+      </nav>
+      <div class="hud-right">
+        <span class="sys-clock" id="clock">--:--:--</span>
+        <a class="btn btn-ghost btn-sm" href="login.html">Вход</a>
+        <a class="btn btn-primary btn-sm" href="register.html">Регистрация</a>
+        <button class="burger" id="burger" aria-label="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ГЕРОЙ -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="container hero-inner">
+      <div>
+        <div class="chip-row">
+          <span class="chip"><span class="dot"></span> ONLINE: 12 482</span>
+          <span class="chip"><span class="dot"></span> НОВОЕ: РЕЛИЗ 2.7.1</span>
+          <span class="chip">Q4 2026 // НЕОН</span>
+        </div>
+        <h1>
+          <span data-scramble data-text="БУДУЩЕЕ СТРОИТСЯ">БУДУЩЕЕ СТРОИТСЯ</span><br>
+          <span class="accent" data-scramble data-text="ПРЯМО ЗДЕСЬ">ПРЯМО ЗДЕСЬ</span>
+        </h1>
+        <p class="lead">Платформа, где команды запускают цифровые продукты: разработка, дизайн, данные и AI — всё в одном неоновом пространстве.</p>
+        <div class="hero-actions">
+          <a href="register.html" class="btn btn-primary">Создать аккаунт</a>
+          <a href="#about" class="btn btn-ghost">Узнать больше</a>
+        </div>
+        <div class="hero-stats">
+          <div><b data-count="12" class="num">0</b> стран</div>
+          <div><b data-count="24" class="num">0</b> открытых вакансии</div>
+          <div><b>98%</b> клиентов рекомендуют нас</div>
+        </div>
+      </div>
+
+      <div class="frame tournament-card">
+        <div class="inner">
+          <div class="t-thumb">
+            <img src="https://picsum.photos/seed/neon-conf-stage/900/506" alt="Конференция NEONCORE CONF 2026">
+          </div>
+          <div class="t-body">
+            <span class="chip live-chip"><span class="dot"></span> ОТКРЫТА РЕГИСТРАЦИЯ</span>
+            <h3 style="margin-top:.8rem">NEONCORE CONF 2026</h3>
+            <div class="t-meta">
+              <span>ФОРМАТ <b>ОФЛАЙН + СТРИМ</b></span>
+              <span>12 ДЕКАБРЯ</span>
+            </div>
+            <div class="bar-label"><span>МЕСТА</span><span>960 / 1200</span></div>
+            <div class="bar" data-fill="75"><i></i></div>
+            <a href="register.html" class="btn btn-magenta btn-block">Занять место</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЕГУЩАЯ СТРОКА -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-group">
+        <span>⚡ релиз <b>2.7.1</b>: аналитика в реальном времени уже на всех серверах</span>
+        <span>◆ кейс: <em>FINTECH PULSE</em> вырос на 43% по конверсии</span>
+        <span>◆ на <b>NEONCORE CONF</b> занято уже 75% мест</span>
+        <span>⚡ платформа преодолела отметку <b>248 000</b> пользователей</span>
+        <span>◆ митап дизайн-гильдии — 3 декабря, онлайн</span>
+      </div>
+      <div class="ticker-group">
+        <span>⚡ релиз <b>2.7.1</b>: аналитика в реальном времени уже на всех серверах</span>
+        <span>◆ кейс: <em>FINTECH PULSE</em> вырос на 43% по конверсии</span>
+        <span>◆ на <b>NEONCORE CONF</b> занято уже 75% мест</span>
+        <span>⚡ платформа преодолела отметку <b>248 000</b> пользователей</span>
+        <span>◆ митап дизайн-гильдии — 3 декабря, онлайн</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- О ПЛАТФОРМЕ В ЦИФРАХ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="sec-label">// 01 // ПЛАТФОРМА В ЦИФРАХ</div>
+        <h2 class="sec-title"><span class="mask"><span class="mask-in">Почему мы</span></span></h2>
+      </div>
+      <div class="frame stats-band reveal"><div class="inner">
+        <div class="stat"><b class="num" data-count="248500">0</b><span>пользователей</span></div>
+        <div class="stat"><b class="num" data-count="1843">0</b><span>проектов запущено</span></div>
+        <div class="stat"><b class="num" data-count="12.5" data-decimals="1" data-suffix=" млрд ₽">0</b><span>оборот клиентов</span></div>
+        <div class="stat"><b class="num" data-count="12">0</b><span>стран</span></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- НОВОСТИ -->
+  <section class="section" id="news" style="padding-top:1rem">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="sec-label">// 02 // СВОДКА</div>
+        <h2 class="sec-title"><span class="mask"><span class="mask-in">Новости платформы</span></span></h2>
+      </div>
+      <div class="news-grid reveal">
+        <article class="frame news-card"><div class="inner">
+          <img src="https://picsum.photos/seed/release-analytics/640/460" alt="Релиз 2.7.1">
+          <div class="news-body">
+            <span class="news-date">19.11.2026 // РЕЛИЗ</span>
+            <h3>Версия 2.7.1: аналитика в реальном времени</h3>
+            <p>Новые дашборды, обновлённый редактор проектов и переработанный личный кабинет уже доступны всем пользователям.</p>
+            <a href="#" class="news-link">Читать →</a>
+          </div>
+        </div></article>
+        <article class="frame news-card"><div class="inner">
+          <img src="https://picsum.photos/seed/conf-speakers/640/460" alt="Конференция NEONCORE CONF">
+          <div class="news-body">
+            <span class="news-date">17.11.2026 // СОБЫТИЕ</span>
+            <h3>NEONCORE CONF: программа и спикеры</h3>
+            <p>12 декабря встречаемся офлайн: доклады о продукте, дизайне и AI, нетворкинг-зона и розыгрыш призов для участников.</p>
+            <a href="#" class="news-link">Читать →</a>
+          </div>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container reveal">
+      <h2 data-scramble data-text="ГОТОВЫ ВОЙТИ В БУДУЩЕЕ?">ГОТОВЫ ВОЙТИ В БУДУЩЕЕ?</h2>
+      <p>Регистрация занимает 30 секунд. Ваши проекты, команда и инструменты — уже здесь.</p>
+      <a href="register.html" class="btn btn-primary">Начать работу</a>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>NEON<b style="color:var(--cyan)">CORE</b></h4>
+        <p>Цифровая платформа нового поколения: продукты, команды, инструменты и живое комьюнити с 2023 года.</p>
+      </div>
+      <div><h4>Навигация</h4><ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#about">О платформе</a></li>
+        <li><a href="#news">Новости</a></li>
+        <li><a href="register.html">Регистрация</a></li>
+      </ul></div>
+      <div><h4>Помощь</h4><ul>
+        <li><a href="#">Условия использования</a></li>
+        <li><a href="#">Конфиденциальность</a></li>
+        <li><a href="#">Поддержка</a></li>
+        <li><a href="#">API для команд</a></li>
+      </ul></div>
+      <div><h4>Соцсети</h4><ul>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Behance</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 NEONCORE. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</span>
+      <span class="server-ok">ВСЕ СИСТЕМЫ: ONLINE</span>
+    </div>
+  </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
